@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+*,
+::after,
+::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ========== Colors ========== */
+    /* ¨Primary */
+    --p-red__light: hsl(356, 100%, 66%);                  /* CTA text */
+    --p-red__light--very: hsl(355, 100%, 74%);            /* CTA hover background */
+    --p-blue__dark--very: hsl(208, 49%, 24%);             /* headings */
+    /* Neutral */
+    --n-white: hsl(0, 0%, 100%);                          /* text */
+    --n-grayish-blue: hsl(240, 2%, 79%);                  /* footer text */
+    --n-grayish-blue__dark--very: hsl(207, 13%, 34%);     /* body copy */
+    --n-black-blue__dark--blue: hsl(240, 10%, 16%);       /* footer background */
+    /* Gradient */
+    /* Background gradient - Intro/CTA mobile nav */
+    --g-red__light--very: hsl(13, 100%, 72%);
+    --g-red__light: hsl(353, 100%, 62%);
+    /* Background gradient - body */
+    --g-gray-blue__dark--very: hsl(237, 17%, 21%);
+    --g-desaturated-blue__dark--very: hsl(237, 23%, 32%);
+
+    /* ========== Typography ========== */
+    --o-font__family: 'Overpass', sans-serif;
+    --o-font__size--l: 300;
+    --o-font__size--sb: 600;
+    --u-font__family: font-family: 'Ubuntu', sans-serif;
+    --u-font__size--r: 400;
+    --u-font__size--m: 500;
+    --u-font__size--b: 700;
+}
+
+
+
+ 
