@@ -170,22 +170,44 @@ body {
 
 .hero__title,
 .hero__paragraph,
-.hero__buttons--s {
-    color: var(--n-white);
+.hero__buttons--s,
+.main__title, 
+.main__subtitle {
     text-align: center;
 }
 
 .hero__title,
-.hero__paragraph {
+.hero__paragraph,
+.hero__buttons--s {
+    color: var(--n-white);
+}
+
+.hero__title,
+.hero__paragraph,
+.main__title,
+.main__subtitle{
     font-family: var(--o-font__family);
 }
 
-.hero__title {
+.hero__title,
+.main__title,
+.main__subtitle {
     font-weight: var(--u-font__weight--r);
+}
+
+.hero__title {
     font-size: 2.188rem;
 }
 
 .hero__paragraph {
     font-weight: var(--o-font__weight--l);
     font-size: 1.125rem;
+}
+
+.main__title {
+    font-size: 1.8rem;
+}
+
+.main__subtitle {
+    font-size: 1.5rem;
 }
