@@ -11,45 +11,65 @@
 </head>
 <body>
     <header class="hero">
-        <nav class="nav">
-            <figure class="nav__logo">
-                <img src="./images/logo.svg" class="nav__img" alt="logotipo">
-            </figure>
-            <section class="nav__menu">
-                <h3>Product</h3>
-                <div class="nav__menu--dropdown">
-                    <a href="#">Overview</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">Marketplace</a>
-                    <a href="#">Features</a>
-                    <a href="#">Integrations</a>
-                </div>
-                <h3>Company</h3>
-                <div class="nav__menu--dropdown">
-                    <a href="#">About</a>
-                    <a href="#">Team</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Careers</a>
-                </div>
-                <h3>Connect</h3>
-                <div class="nav__menu--dropdown">
-                    <a href="#">Contact</a>
-                    <a href="#">Newsletter</a>
-                    <a href="#">LinkedIn</a>
-                </div>
+        <div class="hero--bg">
+            <nav class="nav container">
+                <figure class="nav__logo">
+                    <img src="./images/logo.svg" class="nav__img" alt="logotipo">
+                </figure>
+                <section class="nav__menu">
+                    <!-- Hamburger Menu -->
+                    <label for="menu" class="nav__label">
+                        <img src="./images/icon-hamburger.svg" class="nav__img" alt="menu">
+                    </label>
+                    <input type="checkbox" id="menu" class="nav__input">
+                    <!-- Sections Menu -->
+                    <section class="nav__section">
+                        <h3 class="nav__item">Product</h3>
+                        <div class="nav__sections--dropdown">
+                            <a href="#">Overview</a>
+                            <a href="#">Pricing</a>
+                            <a href="#">Marketplace</a>
+                            <a href="#">Features</a>
+                            <a href="#">Integrations</a>
+                        </div>
+                    </section>
+                    <section class="nav__section">
+                        <h3 class="nav__item">Company</h3>
+                        <div class="nav__sections--dropdown">
+                            <a href="#">About</a>
+                            <a href="#">Team</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Careers</a>
+                        </div>
+                    </section>
+                    <section class="nav__section">
+                        <h3 class="nav__item">Connect</h3>
+                        <div class="nav__sections--dropdown">
+                            <a href="#">Contact</a>
+                            <a href="#">Newsletter</a>
+                            <a href="#">LinkedIn</a>
+                        </div>
+                    </section>
+                    <section class="nav__buttons">
+                        <a href="#">Login</a>
+                        <a href="#">Sign up</a>
+                    </section>
+                </section>
+            </nav>
+            
+            <section class="hero__main container">
+                <section class="hero__text">
+                    <h1 class="hero__title">A modern<br>publishing platform</h1>
+                    <p class="hero__paragraph">Grow your audience and build your<br>online brand</p>
+                </section>
+                <section class="hero__buttons">
+                    <a class="hero__buttons--p" href="#">Start for Free</a>
+                    <a class="hero__buttons--s" href="#">Learn More</a>
+                </section>
             </section>
-            <section class="nav__buttons">
-                <a href="#">Login</a>
-                <a href="#">Sign up</a>
-            </section>
-        </nav>
+        </div>
     </header>
 
-    A modern publishing platform
-    Grow your audience and build your online brand
-
-    Start for Free
-    Learn More
 
     Designed for the future
 
