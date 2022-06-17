@@ -43,16 +43,16 @@ a {
 }
 
 body {
+    width: 100vw;
+    border: 1px solid gold;
     font-family: var(--o-font__family);
     font-weight: var(--o-font__weight--l);
 }
 
-
-
 .hero {
     background-color: var(--g-red__light--very);
     background: linear-gradient(180deg, rgba(255, 143, 112, 1) 0%, rgba(255, 61, 80, 1) 100%);
-    height: 80vh;
+    height: 90vh;
     margin-bottom: 10vh;
 }
 
@@ -71,15 +71,11 @@ body {
     border-bottom-left-radius: 100px;
 }
 
-.hero * {
-    /* outline: 1px solid black; */
-}
-
 .container {
     height: 100%;
     width: 90%;
     margin: 0 auto;
-    padding: 4rem 0;
+    padding: 3rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,17 +99,18 @@ body {
 }
 
 .nav__menu > .nav__label > img {
-    width: 2.5rem;
-    height: 1.25rem;
+    width: 2rem;
+    height: 1rem;
 }
 
-/*
-.nav__label
-*/
 .nav__section,
 .nav__buttons,
 .nav__input {
     display: none;
+}
+
+.nav__img {
+    width: 75%;
 }
 
 .nav__section {
@@ -133,19 +130,21 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5rem;
+    gap: 2rem;
 }
 
 .hero__buttons {
     display: flex;
-    gap: 2.5rem;
+    gap: 0.5rem;
     font-family: var(--u-font__family);
     font-weight: var(--u-font__weight--b);
 }
 
 .hero__buttons--p,
 .hero__buttons--s {
-    padding: 1rem 1.75rem;
+    min-height: 2rem;
+    min-width: 2rem;
+    padding: 0.75rem 1rem;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     border-radius: 100px;
@@ -172,7 +171,8 @@ body {
 .hero__paragraph,
 .hero__buttons--s,
 .main__title, 
-.main__subtitle {
+.main__subtitle,
+.main__paragraph {
     text-align: center;
 }
 
@@ -195,19 +195,46 @@ body {
     font-weight: var(--u-font__weight--r);
 }
 
+.main__title,
+.main__subtitle,
+.main__paragraph {
+    margin: 1rem 0;
+    padding: 0 10%;
+}
+
 .hero__title {
-    font-size: 2.188rem;
+    font-size: 1.8rem;
+}
+
+.hero__paragraph,
+.main__paragraph {
+    font-size: 0.9rem;
 }
 
 .hero__paragraph {
     font-weight: var(--o-font__weight--l);
-    font-size: 1.125rem;
 }
 
 .main__title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .main__subtitle {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+}
+
+/* ========== Main Section ========== */
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    outline: 2px blue solid;
+}
+
+.main__img {
+    padding: 0 0;
+    width: 100%;
+}
+
+.main__section {
+    margin: 2rem 0;
 }
